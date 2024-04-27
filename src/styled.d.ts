@@ -4,7 +4,6 @@ import type { Size } from "./global";
 declare module "styled-components" {
   export interface DefaultTheme {
     borderRadius: {
-      xs: string;
       sm: string;
       md: string;
       lg: string;
@@ -13,19 +12,18 @@ declare module "styled-components" {
     colors: {
       main: string;
       secondary: string;
+      info: string;
     };
     backgroundColor: {
       main: string;
       secondary: string;
     };
     padding: {
-      xs: string;
       sm: string;
       md: string;
       lg: string;
     };
     fontSize: {
-      xs: string;
       sm: string;
       md: string;
       lg: string;

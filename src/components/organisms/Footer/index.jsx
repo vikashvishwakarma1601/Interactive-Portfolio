@@ -1,21 +1,20 @@
 import React from "react";
+import Link from "../../atoms/Link";
+import { FooterContainer, List, ListItem } from "./style";
 
 const Footer = () => {
   return (
-    <footer>
+    <FooterContainer>
       <p>&copy; 2024 All rights reserved.</p>
-      <ul>
-        <li>
-          <a href="/">LinkedIn</a>
-        </li>
-        <li>
-          <a href="/">Dribbble</a>
-        </li>
-        <li>
-          <a href="/">Instagram</a>
-        </li>
-      </ul>
-    </footer>
+      <List>
+        <ListItem>
+          <Link href="/">LinkedIn</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="/">Github</Link>
+        </ListItem>
+      </List>
+    </FooterContainer>
   );
 };
 

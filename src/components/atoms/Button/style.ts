@@ -8,6 +8,17 @@ interface ButtonProps {
   readonly theme: DefaultTheme;
 }
 
+interface SizeDimensions {
+  width: string;
+  height: string;
+}
+
+const sizeDimensionsMap: Record<Size, SizeDimensions> = {
+  sm: { width: "100px", height: "48px" },
+  md: { width: "180px", height: "60px" },
+  lg: { width: "260px", height: "72px" },
+};
+
 function isSize(value: any): value is Size {
   return ["xs", "sm", "md", "lg", "xl"].includes(value);
 }
@@ -35,12 +46,15 @@ export const BasicButton = styled.button<ButtonProps>`
   align-items: center;
   gap: 0.5rem;
   border: none;
-  padding: ${(props) => {
-    console.log({ props });
-    return props.theme.padding[props.$size];
-  }};
-  font-size: ${(props) => props.theme.fontSize[props.$size]};
+  width: ${(props) => sizeDimensionsMap[props.$size]["width"]};
+  height: ${(props) => sizeDimensionsMap[props.$size]["height"]};
+  padding: ${(props) => props.theme.padding[props.$size]};
+  font-size: 12px;
   border-radius: ${(props) => getBorderRadius(props)};
   color: ${(props) => props.theme.colors[props.$variant]};
   background-color: ${(props) => props.theme.backgroundColor[props.$variant]};
+
+  & > a {
+    color: ${(props) => props.theme.colors[props.$variant]};
+  }
 `;

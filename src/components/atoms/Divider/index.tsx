@@ -1,13 +1,11 @@
-import React from "react";
+import { Line } from "./style";
 
-const style = {
-  width: "100%",
-  height: "0.5px",
-  backgroundColor: "#E5E4E3",
-};
+interface Props {
+  thickness?: number;
+}
 
-const Divider = () => {
-  return <div style={style}>Divider</div>;
+const Divider = ({ thickness }: Props) => {
+  return <Line $thickness={thickness}></Line>;
 };
 
 export default Divider;

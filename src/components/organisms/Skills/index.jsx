@@ -1,11 +1,7 @@
-import React from "react";
-
 const Skills = () => {
   return (
     <section className="client-logos">
-      <div className="logo">
-        <img src="mattered.png" alt="Mattered" />
-      </div>
+      <div className="logo"></div>
       {/* Add other client logos */}
     </section>
   );

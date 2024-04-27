@@ -16,25 +16,20 @@ import OttrecoSemiBold from "./assets/fonts/Otterco-SemiBold.otf";
 import OttrecoSemiBoldItalic from "./assets/fonts/Otterco-SemiBoldItalic.otf";
 import OttrecoThin from "./assets/fonts/Otterco-Thin.otf";
 import OttrecoThinItalic from "./assets/fonts/Otterco-ThinItalic.otf";
-
-import FilmGrain from "./assets/images/film_grain.png";
+import OttrecoDisplayMedium from "./assets/fonts/OttercoDisplay-Medium.otf";
 
 export default createGlobalStyle`
 
   :root {
-      --primary-color: #000000;
-      --secondary-color: #FFFFFF;
-      --accent-color: #D9D9D9;
-      --heading-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      // --primary-color: #000000;
+      // --secondary-color: #FFFFFF;
+      // --accent-color: #D9D9D9;
+      // --heading-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       --body-font: Ottreco, sans-serif;
       font-family: Ottreco; 
-
-      line-height: 1.5;
-      font-weight: 400;
-
       color-scheme: light dark;
-      color: rgba(255, 255, 255, 0.87);
-      background-color: #242424;
+      color: rgb(55, 55, 55);
+      background-color: #ffffff;
 
       font-synthesis: none;
       text-rendering: optimizeLegibility;
@@ -48,19 +43,8 @@ export default createGlobalStyle`
       box-sizing:border-box;
     }
 
-    body::after{
-      content:'';
-      width:100%;
-      height:100%;
-      position:absolute;
-      top:0;
-      left:0;
-      z-index:99;
-      background-image:url(${FilmGrain})
-    }
-
     @font-face {
-    font-family: "Ottreco";
+    font-family: "Ottreco-bold";
     font-weight: normal;
     font-style: bold;
     font-display: swap;
@@ -130,7 +114,7 @@ export default createGlobalStyle`
     }
 
   @font-face {
-    font-family: "Ottreco";
+    font-family: "Ottreco-light";
     font-weight: normal;
     font-style: light;
     font-display: swap;
@@ -150,7 +134,7 @@ export default createGlobalStyle`
     }
 
   @font-face {
-    font-family: "Ottreco";
+    font-family: "Ottreco-medium";
     font-weight: normal;
     font-style: medium;
     font-display: swap;
@@ -170,7 +154,7 @@ export default createGlobalStyle`
     }
 
   @font-face {
-    font-family: "Ottreco";
+    font-family: "Ottreco-regular";
     font-weight: normal;
     font-style: regular;
     font-display: swap;
@@ -217,5 +201,14 @@ export default createGlobalStyle`
     src: url(${OttrecoThinItalic});
     src: url(${OttrecoThinItalic}) format("embedded-opentype"),
       url(${OttrecoThinItalic}) format("otf");
+    }
+  @font-face {
+    font-family: "Ottreco-display-medium";
+    font-weight: normal;
+    font-style: thin-italic;
+    font-display: swap;
+    src: url(${OttrecoDisplayMedium});
+    src: url(${OttrecoDisplayMedium}) format("embedded-opentype"),
+      url(${OttrecoDisplayMedium}) format("otf");
     }
 `;

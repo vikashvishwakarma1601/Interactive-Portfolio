@@ -1,14 +1,19 @@
 import React from "react";
+import Avatar from "../../atoms/Avatar";
+import Button from "../../atoms/Button";
+import Link from "../../atoms/Link";
+
+import { HeroContainer } from "./style";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="avatar">
-        <img src="avatar.jpg" alt="Avatar" />
-      </div>
+    <HeroContainer>
+      <Avatar src="https://framerusercontent.com/images/hcjBHIZgezWmanhKD6EDO43p3c.png" />
       <h1>Building digital products, brands, and experience.</h1>
-      <button>Latest Work</button>
-    </section>
+      <Button variant="secondary" size="md">
+        <Link> Latest Shots</Link>
+      </Button>
+    </HeroContainer>
   );
 };
 

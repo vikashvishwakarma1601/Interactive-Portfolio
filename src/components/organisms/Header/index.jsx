@@ -1,28 +1,42 @@
 import React from "react";
+import Link from "../../atoms/Link";
+
+import {
+  HeaderContainer,
+  Nav,
+  Row,
+  EmailContainer,
+  List,
+  ListItem,
+} from "./style";
+import Button from "../../atoms/Button";
 
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <div className="logo">
-          <a href="/">kernixstudio/digital</a>
-        </div>
-        <ul>
-          <li>
-            <a href="/">Copy</a>
-          </li>
-          <li>
-            <a href="/">LinkedIn</a>
-          </li>
-          <li>
-            <a href="/">Dribbble</a>
-          </li>
-          <li>
-            <a href="/">Instagram</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <HeaderContainer>
+      <Nav>
+        <Row>
+          <EmailContainer>
+            <span>vishwakarma.vikash1601@gmail.com</span>
+            <Button>Copy</Button>
+          </EmailContainer>
+          <Button>
+            <Link>Resume</Link>
+          </Button>
+        </Row>
+        <Row>
+          <List>
+            <ListItem>
+              <Link href="/">LinkedIn</Link>
+            </ListItem>
+            <ListItem>|</ListItem>
+            <ListItem>
+              <Link href="/">Github</Link>
+            </ListItem>
+          </List>
+        </Row>
+      </Nav>
+    </HeaderContainer>
   );
 };
 
