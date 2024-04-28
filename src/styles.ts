@@ -1,32 +1,24 @@
 import { createGlobalStyle } from "styled-components";
 
-import OttrecoBold from "./assets/fonts/Otterco-Bold.otf";
-import OttrecoBoldItalic from "./assets/fonts/Otterco-BoldItalic.otf";
-import OttrecoExtraBold from "./assets/fonts//Otterco-ExtraBold.otf";
-import OttrecoExtraBoldItalic from "./assets/fonts/Otterco-ExtraBoldItalic.otf";
-import OttrecoExtraLight from "./assets/fonts/Otterco-ExtraLight.otf";
-import OttrecoExtraLightItalic from "./assets/fonts/Otterco-ExtraLightItalic.otf";
-import OttrecoItalic from "./assets/fonts/Otterco-Italic.otf";
-import OttrecoLight from "./assets/fonts/Otterco-Light.otf";
-import OttrecoLightItalic from "./assets/fonts/Otterco-LightItalic.otf";
-import OttrecoMedium from "./assets/fonts/Otterco-Medium.otf";
-import OttrecoMediumItalic from "./assets/fonts/Otterco-MediumItalic.otf";
-import OttrecoRegular from "./assets/fonts/Otterco-Regular.otf";
-import OttrecoSemiBold from "./assets/fonts/Otterco-SemiBold.otf";
-import OttrecoSemiBoldItalic from "./assets/fonts/Otterco-SemiBoldItalic.otf";
-import OttrecoThin from "./assets/fonts/Otterco-Thin.otf";
-import OttrecoThinItalic from "./assets/fonts/Otterco-ThinItalic.otf";
-import OttrecoDisplayMedium from "./assets/fonts/OttercoDisplay-Medium.otf";
+import SourceSansProBlack from "./assets/fonts/mac/SourceSansPro-Black.otf";
+import SourceSansProBlackIt from "./assets/fonts/mac/SourceSansPro-BlackIt.otf";
+import SourceSansProBold from "./assets/fonts/mac/SourceSansPro-Bold.otf";
+import SourceSansProBoldIt from "./assets/fonts/mac/SourceSansPro-BoldIt.otf";
+import SourceSansProExtraLight from "./assets/fonts/mac/SourceSansPro-ExtraLight.otf";
+import SourceSansProExtraLightIt from "./assets/fonts/mac/SourceSansPro-ExtraLightIt.otf";
+import SourceSansProIt from "./assets/fonts/mac/SourceSansPro-It.otf";
+import SourceSansProLight from "./assets/fonts/mac/SourceSansPro-Light.otf";
+import SourceSansProLightIt from "./assets/fonts/mac/SourceSansPro-LightIt.otf";
+import SourceSansProRegular from "./assets/fonts/mac/SourceSansPro-Regular.otf";
+import SourceSansProSemiBold from "./assets/fonts/mac/SourceSansPro-Semibold.otf";
+import SourceSansProSemiBoldIt from "./assets/fonts/mac/SourceSansPro-SemiboldIt.otf";
+
+import Monterey from "./assets/wallpapers/Monterey Graphic.jpg";
 
 export default createGlobalStyle`
 
   :root {
-      // --primary-color: #000000;
-      // --secondary-color: #FFFFFF;
-      // --accent-color: #D9D9D9;
-      // --heading-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      --body-font: Ottreco, sans-serif;
-      font-family: Ottreco; 
+      font-family: SourceSansProRegular; 
       color-scheme: light dark;
       color: rgb(55, 55, 55);
       background-color: #ffffff;
@@ -43,172 +35,128 @@ export default createGlobalStyle`
       box-sizing:border-box;
     }
 
+    body{
+      height:100vh;
+      background-image:url(${Monterey});
+    }
+
     @font-face {
-    font-family: "Ottreco-bold";
+    font-family: "SourceSansProBlack";
     font-weight: normal;
     font-style: bold;
     font-display: swap;
-    src: url(${OttrecoBold});
-    src: url(${OttrecoBold}) format("embedded-opentype"),
-      url(${OttrecoBold}) format("otf");
+    src: url(${SourceSansProBlack});
+    src: url(${SourceSansProBlack}) format("embedded-opentype"),
+      url(${SourceSansProBlack}) format("otf");
     }
   
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProBlackIt";
     font-weight: normal;
     font-style: bold-italic;
     font-display: swap;
-    src: url(${OttrecoBoldItalic});
-    src: url(${OttrecoBoldItalic}) format("embedded-opentype"),
-      url(${OttrecoBoldItalic}) format("otf");
+    src: url(${SourceSansProBlackIt});
+    src: url(${SourceSansProBlackIt}) format("embedded-opentype"),
+      url(${SourceSansProBlackIt}) format("otf");
     }
   
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProBold";
     font-weight: normal;
     font-style: extra-bold;
     font-display: swap;
-    src: url(${OttrecoExtraBold});
-    src: url(${OttrecoExtraBold}) format("embedded-opentype"),
-      url(${OttrecoExtraBold}) format("otf");
+    src: url(${SourceSansProBold});
+    src: url(${SourceSansProBold}) format("embedded-opentype"),
+      url(${SourceSansProBold}) format("otf");
     }
   
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProBoldIt";
     font-weight: normal;
     font-style: extra-bold-italic;
     font-display: swap;
-    src: url(${OttrecoExtraBoldItalic});
-    src: url(${OttrecoExtraBoldItalic}) format("embedded-opentype"),
-      url(${OttrecoExtraBoldItalic}) format("otf");
+    src: url(${SourceSansProBoldIt});
+    src: url(${SourceSansProBoldIt}) format("embedded-opentype"),
+      url(${SourceSansProBoldIt}) format("otf");
     }
   
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProExtraLight";
     font-weight: normal;
     font-style: extra-light;
     font-display: swap;
-    src: url(${OttrecoExtraLight});
-    src: url(${OttrecoExtraLight}) format("embedded-opentype"),
-      url(${OttrecoExtraLight}) format("otf");
+    src: url(${SourceSansProExtraLight});
+    src: url(${SourceSansProExtraLight}) format("embedded-opentype"),
+      url(${SourceSansProExtraLight}) format("otf");
     }
   
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProExtraLightIt";
     font-weight: normal;
     font-style: extra-light-italic;
     font-display: swap;
-    src: url(${OttrecoExtraLightItalic});
-    src: url(${OttrecoExtraLightItalic}) format("embedded-opentype"),
-      url(${OttrecoExtraLightItalic}) format("otf");
+    src: url(${SourceSansProExtraLightIt});
+    src: url(${SourceSansProExtraLightIt}) format("embedded-opentype"),
+      url(${SourceSansProExtraLightIt}) format("otf");
     }
   
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProIt";
     font-weight: normal;
     font-style: italic;
     font-display: swap;
-    src: url(${OttrecoItalic});
-    src: url(${OttrecoItalic}) format("embedded-opentype"),
-      url(${OttrecoItalic}) format("otf");
+    src: url(${SourceSansProIt});
+    src: url(${SourceSansProIt}) format("embedded-opentype"),
+      url(${SourceSansProIt}) format("otf");
     }
 
   @font-face {
-    font-family: "Ottreco-light";
+    font-family: SourceSansProLight";
     font-weight: normal;
     font-style: light;
     font-display: swap;
-    src: url(${OttrecoLight});
-    src: url(${OttrecoLight}) format("embedded-opentype"),
-      url(${OttrecoLight}) format("otf");
+    src: url(${SourceSansProLight});
+    src: url(${SourceSansProLight}) format("embedded-opentype"),
+      url(${SourceSansProLight}) format("otf");
     }
 
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProLightIt";
     font-weight: normal;
     font-style: light-italic;
     font-display: swap;
-    src: url(${OttrecoLightItalic});
-    src: url(${OttrecoLightItalic}) format("embedded-opentype"),
-      url(${OttrecoLightItalic}) format("otf");
+    src: url(${SourceSansProLightIt});
+    src: url(${SourceSansProLightIt}) format("embedded-opentype"),
+      url(${SourceSansProLightIt}) format("otf");
     }
 
   @font-face {
-    font-family: "Ottreco-medium";
+    font-family: "SourceSansProRegular";
     font-weight: normal;
     font-style: medium;
     font-display: swap;
-    src: url(${OttrecoMedium});
-    src: url(${OttrecoMedium}) format("embedded-opentype"),
-      url(${OttrecoMedium}) format("otf");
+    src: url(${SourceSansProRegular});
+    src: url(${SourceSansProRegular}) format("embedded-opentype"),
+      url(${SourceSansProRegular}) format("otf");
     }
 
   @font-face {
-    font-family: "Ottreco";
+    font-family: "SourceSansProSemiBold";
     font-weight: normal;
     font-style: medium-italic;
     font-display: swap;
-    src: url(${OttrecoMediumItalic});
-    src: url(${OttrecoMediumItalic}) format("embedded-opentype"),
-      url(${OttrecoMediumItalic}) format("otf");
+    src: url(${SourceSansProSemiBold});
+    src: url(${SourceSansProSemiBold}) format("embedded-opentype"),
+      url(${SourceSansProSemiBold}) format("otf");
     }
 
   @font-face {
-    font-family: "Ottreco-regular";
+    font-family: "SourceSansProSemiBoldIt";
     font-weight: normal;
     font-style: regular;
     font-display: swap;
-    src: url(${OttrecoRegular});
-    src: url(${OttrecoRegular}) format("embedded-opentype"),
-      url(${OttrecoRegular}) format("otf");
-    }
-
-  @font-face {
-    font-family: "Ottreco";
-    font-weight: normal;
-    font-style: semi-bold;
-    font-display: swap;
-    src: url(${OttrecoSemiBold});
-    src: url(${OttrecoSemiBold}) format("embedded-opentype"),
-      url(${OttrecoSemiBold}) format("otf");
-    }
-
-  @font-face {
-    font-family: "Ottreco";
-    font-weight: normal;
-    font-style: semi-bold-italic;
-    font-display: swap;
-    src: url(${OttrecoSemiBoldItalic});
-    src: url(${OttrecoSemiBoldItalic}) format("embedded-opentype"),
-      url(${OttrecoSemiBoldItalic}) format("otf");
-    }
-
-  @font-face {
-    font-family: "Ottreco";
-    font-weight: normal;
-    font-style: thin;
-    font-display: swap;
-    src: url(${OttrecoThin});
-    src: url(${OttrecoThin}) format("embedded-opentype"),
-      url(${OttrecoThin}) format("otf");
-    }
-
-  @font-face {
-    font-family: "Ottreco";
-    font-weight: normal;
-    font-style: thin-italic;
-    font-display: swap;
-    src: url(${OttrecoThinItalic});
-    src: url(${OttrecoThinItalic}) format("embedded-opentype"),
-      url(${OttrecoThinItalic}) format("otf");
-    }
-  @font-face {
-    font-family: "Ottreco-display-medium";
-    font-weight: normal;
-    font-style: thin-italic;
-    font-display: swap;
-    src: url(${OttrecoDisplayMedium});
-    src: url(${OttrecoDisplayMedium}) format("embedded-opentype"),
-      url(${OttrecoDisplayMedium}) format("otf");
+    src: url(${SourceSansProSemiBoldIt});
+    src: url(${SourceSansProSemiBoldIt}) format("embedded-opentype"),
+      url(${SourceSansProSemiBoldIt}) format("otf");
     }
 `;

@@ -9,8 +9,11 @@ const Hero = () => {
   return (
     <HeroContainer>
       <Avatar src="https://framerusercontent.com/images/hcjBHIZgezWmanhKD6EDO43p3c.png" />
-      <h1>Building digital products, brands, and experience.</h1>
-      <Button variant="secondary" size="md">
+      <h1>
+        Driving Website Performance & Engagement <br />
+        Experienced Frontend Engineer Specialising in React
+      </h1>
+      <Button variant="secondary" size="lg">
         <Link> Latest Shots</Link>
       </Button>
     </HeroContainer>

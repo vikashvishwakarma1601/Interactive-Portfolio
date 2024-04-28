@@ -4,15 +4,16 @@ import { IconWrapper, Image } from "./style";
 import { Size } from "../../../global";
 
 interface Props {
-  src?: ReactSVGElement | string;
+  src: () => void;
   onClick?: (...args: any) => void;
   size?: Size;
+  className?: string;
 }
 
-const Icon = ({ src, size = "sm" }: Props) => {
+const Icon = ({ src, size = "sm", className = "" }: Props) => {
   return (
-    <IconWrapper $size={size}>
-      <Image src={src} />
+    <IconWrapper className={className} $size={size}>
+      {src()}
     </IconWrapper>
   );
 };

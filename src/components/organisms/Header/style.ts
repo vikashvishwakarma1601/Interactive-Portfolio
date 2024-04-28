@@ -45,5 +45,9 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   font-style: normal;
-  font-family: "Ottreco-regular";
+  font-family: "Ottreco-regular", sans-serif;
+
+  & > span {
+    font-family: sans-serif;
+  }
 `;

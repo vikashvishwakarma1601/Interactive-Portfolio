@@ -8,6 +8,7 @@ import {
   Footer,
 } from "../../components/organisms";
 import { MainContainer, Container, FooterWrapper } from "./style";
+import Projects from "../../components/organisms/Projects";
 
 const PortFolio = () => {
   return (
@@ -16,20 +17,14 @@ const PortFolio = () => {
         <Header />
         <Hero />
       </MainContainer>
-      <br />
-      <br />
-      <br />
-      <Container>
-        <Skills />
-        <Experiences />
-        <br />
-        <br />
-        <br />
-        <FooterWrapper>
-          <Contact />
-          <Footer />
-        </FooterWrapper>
-      </Container>
+      <Skills />
+      <Experiences />
+      <Projects />
+      {/* <Container></Container> */}
+      <FooterWrapper>
+        <Contact />
+        <Footer />
+      </FooterWrapper>
     </div>
   );
 };

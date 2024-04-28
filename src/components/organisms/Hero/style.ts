@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   & > h1 {
-    width: max(300px, 35%);
-    font-family: Ottreco-display-medium;
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 64px;
+    width: max(300px, 70%);
     text-align: center;
-    color: rgb(42, 42, 42);
     margin-inline: auto;
     background-image: linear-gradient(
       97.0286deg,

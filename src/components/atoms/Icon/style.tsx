@@ -12,17 +12,24 @@ interface SizeDimensions {
 }
 
 const sizeDimensionsMap: Record<Size, SizeDimensions> = {
-  sm: { width: "22px", height: "22px" },
-  md: { width: "44px", height: "44px" },
-  lg: { width: "66px", height: "66px" },
+  xs: { width: "13px", height: "13px" },
+  sm: { width: "20px", height: "20px" },
+  md: { width: "30px", height: "30px" },
+  lg: { width: "40px", height: "40px" },
 };
 
 export const IconWrapper = styled.div<IconProps>`
   width: ${(props) => sizeDimensionsMap[props.$size]["width"]};
   height: ${(props) => sizeDimensionsMap[props.$size]["height"]};
+  border-radius: ${(props) => props.theme.borderRadius.main};
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  svg {
+    width: ${(props) => sizeDimensionsMap[props.$size]["width"]};
+    height: ${(props) => sizeDimensionsMap[props.$size]["height"]};
+  }
 `;
 
 export const Image = styled.img`

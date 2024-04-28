@@ -15,8 +15,8 @@ interface SizeDimensions {
 
 const sizeDimensionsMap: Record<Size, SizeDimensions> = {
   sm: { width: "100px", height: "48px" },
-  md: { width: "180px", height: "60px" },
-  lg: { width: "260px", height: "72px" },
+  md: { width: "140px", height: "54px" },
+  lg: { width: "180px", height: "60px" },
 };
 
 function isSize(value: any): value is Size {
@@ -47,10 +47,12 @@ export const BasicButton = styled.button<ButtonProps>`
   gap: 0.5rem;
   border: none;
   width: ${(props) => sizeDimensionsMap[props.$size]["width"]};
+  min-width: ${(props) => sizeDimensionsMap[props.$size]["width"]};
   height: ${(props) => sizeDimensionsMap[props.$size]["height"]};
   padding: ${(props) => props.theme.padding[props.$size]};
   font-size: 12px;
   border-radius: ${(props) => getBorderRadius(props)};
+  border: 3px solid rgb(241, 240, 239);
   color: ${(props) => props.theme.colors[props.$variant]};
   background-color: ${(props) => props.theme.backgroundColor[props.$variant]};
 

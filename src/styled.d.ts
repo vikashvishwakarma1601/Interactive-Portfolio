@@ -1,34 +1,44 @@
 import "styled-components";
 import type { Size } from "./global";
 
+interface ColorNamespace {
+  primary: string;
+  secondary: string;
+  tertiary: string;
+  quaternary: string;
+  quinary: string;
+  default: string;
+}
+
+export default colors;
+
 declare module "styled-components" {
   export interface DefaultTheme {
     borderRadius: {
-      sm: string;
-      md: string;
-      lg: string;
-      default: string;
-    };
-    colors: {
       main: string;
       secondary: string;
-      info: string;
+    };
+    borderColor: {
+      main: string;
+    };
+    colors: ColorNamespace;
+    controlButtonColor: {
+      close: string;
+      minimize: string;
+      fullscreen: string;
     };
     backgroundColor: {
       main: string;
       secondary: string;
-    };
-    padding: {
-      sm: string;
-      md: string;
-      lg: string;
     };
     fontSize: {
       sm: string;
       md: string;
       lg: string;
       xl: string;
-      xxl: string;
+    };
+    boxShadow: {
+      primary: string;
     };
   }
 }

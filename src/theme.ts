@@ -2,31 +2,40 @@ import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   borderRadius: {
-    sm: "5px",
-    md: "10px",
-    lg: "20px",
-    default: "60px",
+    main: ".3em",
+    secondary: ".8em",
+  },
+  borderColor: {
+    main: "#c8c8c861",
   },
   colors: {
-    main: "#000000",
-    secondary: "#FFFFFF",
-    info: "#373737",
+    primary: "#b2b2b2",
+    secondary: "#575757",
+    tertiary: "#4ed4b3",
+    quaternary: "#51b0d7",
+    quinary: "#000000",
+    default: "#ffffff",
+  },
+  controlButtonColor: {
+    close: "#ff6254",
+    minimize: "#ffc360",
+    fullscreen: "#5caf4c",
+  },
+  hover: {
+    main: "#4a75f6ab",
   },
   backgroundColor: {
-    main: "#FFFFFF",
+    main: "#575757",
     secondary: "#000000",
-  },
-  padding: {
-    sm: "24px 48px",
-    md: "12px 24px",
-    lg: "16px 32px",
   },
   fontSize: {
     sm: "14px",
     md: "16px",
     lg: "18px",
     xl: "24px",
-    xxl: "28px",
+  },
+  boxShadow: {
+    primary: "#0000005e 0px 14px 30px, #00000045 0px 10px 25px",
   },
 };
 

@@ -20,16 +20,16 @@ const Header = () => {
             <span>vishwakarma.vikash1601@gmail.com</span>
             <Button>Copy</Button>
           </EmailContainer>
-          <Button>
-            <Link>Resume</Link>
-          </Button>
+          <Button>Resume</Button>
         </Row>
         <Row>
           <List>
             <ListItem>
               <Link href="/">LinkedIn</Link>
             </ListItem>
-            <ListItem>|</ListItem>
+            <ListItem>
+              <span>/</span>
+            </ListItem>
             <ListItem>
               <Link href="/">Github</Link>
             </ListItem>
