@@ -28,7 +28,10 @@ export const Container = styled.div`
     left: 0;
     border: ${(props) => "1px solid" + props.theme.borderColor.main};
     border-radius: ${(props) => props.theme.borderRadius.main};
-    background-color: ${(props) => props.theme.backgroundColor.main};
+    backdrop-filter: blur(18px) saturate(200%);
+    -webkit-backdrop-filter: blur(18px) saturate(200%);
+    background-color: ${(props) => props.theme.backgroundColor.inActive};
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: 0.98em 0.98em, 1.3em 100%;

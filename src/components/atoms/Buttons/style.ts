@@ -8,10 +8,11 @@ interface ControlButtonProps {
 }
 
 export const Container = styled.div`
-  width: 50px;
+  width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
 `;
 
 const getBgColor = (props: ControlButtonProps) => {
@@ -26,8 +27,8 @@ const getBgColor = (props: ControlButtonProps) => {
 };
 
 export const ControlButton = styled.span<ControlButtonProps>`
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -38,11 +39,6 @@ export const ControlButton = styled.span<ControlButtonProps>`
 
   & > span {
     position: absolute;
-    visibility: hidden;
-  }
-
-  &.active:hover > span {
-    visibility: visible;
   }
 
   &::before {
@@ -50,15 +46,8 @@ export const ControlButton = styled.span<ControlButtonProps>`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: ${(props) => props.theme.colors.tertiary};
-    opacity: 0.8;
-  }
-
-  &.active:hover::before {
+    // background-color: ${(props) => props.theme.colors.secondary};
     background-color: ${(props) => getBgColor(props)};
-  }
-
-  &:hover:not(.active)::before {
-    background-color: ${(props) => props.theme.colors.tertiary};
+    opacity: 0.8;
   }
 `;

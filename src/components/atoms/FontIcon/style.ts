@@ -1,4 +1,4 @@
-import styled, { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 
 interface IconProps {
   readonly $invert: boolean;
@@ -8,7 +8,7 @@ interface IconProps {
 
 const getCssValue = (value: string | number | undefined) => {
   if (!value) {
-    return "12px";
+    return "100%";
   } else if (typeof value === "string") {
     return value;
   }
@@ -23,12 +23,6 @@ export const IconContainer = styled.span<IconProps>(
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      svg: {
-        width: getCssValue($width),
-        height: getCssValue($height),
-        fill: $invert ? "#ffffff" : "#000000",
-        strokeWidth: 1,
-      },
     };
   }
 );

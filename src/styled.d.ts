@@ -10,6 +10,21 @@ interface ColorNamespace {
   default: string;
 }
 
+type FontFamily = {
+  SourceSansProBlack: "SourceSansProBlack";
+  SourceSansProBlackIt: "SourceSansProBlackIt";
+  SourceSansProBold: "SourceSansProBold";
+  SourceSansProBoldIt: "SourceSansProBoldIt";
+  SourceSansProExtraLight: "SourceSansProExtraLight";
+  SourceSansProExtraLightIt: "SourceSansProExtraLightIt";
+  SourceSansProIt: "SourceSansProIt";
+  SourceSansProLight: "SourceSansProLight";
+  SourceSansProLightIt: "SourceSansProLightIt";
+  SourceSansProRegular: "SourceSansProRegular";
+  SourceSansProSemiBold: "SourceSansProSemiBold";
+  SourceSansProSemiBoldIt: "SourceSansProSemiBoldIt";
+};
+
 export default colors;
 
 declare module "styled-components" {
@@ -28,8 +43,7 @@ declare module "styled-components" {
       fullscreen: string;
     };
     backgroundColor: {
-      main: string;
-      secondary: string;
+      [key: string]: string;
     };
     fontSize: {
       sm: string;
@@ -37,8 +51,11 @@ declare module "styled-components" {
       lg: string;
       xl: string;
     };
-    boxShadow: {
-      primary: string;
-    };
+    fontFamily: FontFamily;
+    BOX_SHADOW_PRIMARY: string;
+    BOX_SHADOW_SECONDARY: string;
+    // boxShadow: {
+    //   primary: string;
+    // };
   }
 }

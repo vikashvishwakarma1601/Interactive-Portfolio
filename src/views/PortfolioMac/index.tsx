@@ -1,21 +1,20 @@
-import React from "react";
-
-import DropDown from "../../components/atoms/DropDown";
-import Navbar from "../../components/molecules/Navbar";
+import AppBar from "../../components/molecules/AppBar";
+import NavBar from "../../components/molecules/NavBar";
 import SpotlightSearch from "../../components/molecules/SpotlightSearch";
 import { Container } from "./style";
-import WindowControls from "../../components/atoms/WindowControls";
 
 const Mac = () => {
   return (
     <Container>
-      <DropDown />
+      <NavBar />
       <br />
-      <WindowControls />
       <br />
-      <Navbar />
+      <br />
+      <br />
+      <AppBar />
       <br />
       <SpotlightSearch />
+      {/* <About /> */}
     </Container>
   );
 };

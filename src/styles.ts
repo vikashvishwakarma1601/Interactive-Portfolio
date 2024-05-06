@@ -18,7 +18,7 @@ import Monterey from "./assets/wallpapers/Monterey Graphic.jpg";
 export default createGlobalStyle`
 
   :root {
-      font-family: SourceSansProRegular; 
+      font-family: system-ui; 
       color-scheme: light dark;
       color: rgb(55, 55, 55);
       background-color: #ffffff;
@@ -42,8 +42,6 @@ export default createGlobalStyle`
 
     @font-face {
     font-family: "SourceSansProBlack";
-    font-weight: normal;
-    font-style: bold;
     font-display: swap;
     src: url(${SourceSansProBlack});
     src: url(${SourceSansProBlack}) format("embedded-opentype"),
@@ -52,8 +50,6 @@ export default createGlobalStyle`
   
   @font-face {
     font-family: "SourceSansProBlackIt";
-    font-weight: normal;
-    font-style: bold-italic;
     font-display: swap;
     src: url(${SourceSansProBlackIt});
     src: url(${SourceSansProBlackIt}) format("embedded-opentype"),
@@ -62,7 +58,6 @@ export default createGlobalStyle`
   
   @font-face {
     font-family: "SourceSansProBold";
-    font-weight: normal;
     font-style: extra-bold;
     font-display: swap;
     src: url(${SourceSansProBold});
@@ -72,7 +67,6 @@ export default createGlobalStyle`
   
   @font-face {
     font-family: "SourceSansProBoldIt";
-    font-weight: normal;
     font-style: extra-bold-italic;
     font-display: swap;
     src: url(${SourceSansProBoldIt});
@@ -82,7 +76,6 @@ export default createGlobalStyle`
   
   @font-face {
     font-family: "SourceSansProExtraLight";
-    font-weight: normal;
     font-style: extra-light;
     font-display: swap;
     src: url(${SourceSansProExtraLight});
@@ -92,7 +85,6 @@ export default createGlobalStyle`
   
   @font-face {
     font-family: "SourceSansProExtraLightIt";
-    font-weight: normal;
     font-style: extra-light-italic;
     font-display: swap;
     src: url(${SourceSansProExtraLightIt});
@@ -102,7 +94,6 @@ export default createGlobalStyle`
   
   @font-face {
     font-family: "SourceSansProIt";
-    font-weight: normal;
     font-style: italic;
     font-display: swap;
     src: url(${SourceSansProIt});
@@ -111,8 +102,7 @@ export default createGlobalStyle`
     }
 
   @font-face {
-    font-family: SourceSansProLight";
-    font-weight: normal;
+    font-family: "SourceSansProLight";
     font-style: light;
     font-display: swap;
     src: url(${SourceSansProLight});
@@ -122,7 +112,6 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: "SourceSansProLightIt";
-    font-weight: normal;
     font-style: light-italic;
     font-display: swap;
     src: url(${SourceSansProLightIt});
@@ -132,7 +121,6 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: "SourceSansProRegular";
-    font-weight: normal;
     font-style: medium;
     font-display: swap;
     src: url(${SourceSansProRegular});
@@ -142,7 +130,6 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: "SourceSansProSemiBold";
-    font-weight: normal;
     font-style: medium-italic;
     font-display: swap;
     src: url(${SourceSansProSemiBold});
@@ -152,7 +139,6 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: "SourceSansProSemiBoldIt";
-    font-weight: normal;
     font-style: regular;
     font-display: swap;
     src: url(${SourceSansProSemiBoldIt});

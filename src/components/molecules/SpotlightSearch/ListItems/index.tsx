@@ -17,82 +17,82 @@ const ListItems = () => {
         <Item $active={true}>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Safari</span>
           </ItemLabel>
         </Item>
         <Item>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Screen Sharing</span>
           </ItemLabel>
         </Item>
         <Item>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Safari</span>
           </ItemLabel>
         </Item>
         <Item>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Safari</span>
           </ItemLabel>
         </Item>
         <Item>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Safari</span>
           </ItemLabel>
         </Item>
         <Item>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Safari</span>
           </ItemLabel>
         </Item>
         <Item>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Safari</span>
           </ItemLabel>
         </Item>
         <Item>
           <ItemLabel>
             <Icon src={Setting} size="sm" />
-            <span className="item__label">Settings</span>
+            <span className="item__label">Safari</span>
           </ItemLabel>
         </Item>
         <GroupedItem>
-          <GroupedItemLabel>Settings</GroupedItemLabel>
+          <GroupedItemLabel>Suggestions</GroupedItemLabel>
           <List>
             <Item>
               <ItemLabel>
                 <Icon src={Setting} size="sm" />
-                <span className="item__label">Settings</span>
+                <span className="item__label">Safari</span>
               </ItemLabel>
             </Item>
             <Item>
               <ItemLabel>
                 <Icon src={Setting} size="sm" />
-                <span className="item__label">Settings</span>
+                <span className="item__label">Safari</span>
               </ItemLabel>
             </Item>
           </List>
         </GroupedItem>
 
         <GroupedItem>
-          <GroupedItemLabel>Settings</GroupedItemLabel>
+          <GroupedItemLabel>Safari</GroupedItemLabel>
           <List>
             <Item>
               <ItemLabel>
                 <Icon src={Setting} size="sm" />
-                <span className="item__label">Settings</span>
+                <span className="item__label">Safari</span>
               </ItemLabel>
             </Item>
             <Item>
               <ItemLabel>
                 <Icon src={Setting} size="sm" />
-                <span className="item__label">Settings</span>
+                <span className="item__label">Safari</span>
               </ItemLabel>
             </Item>
           </List>

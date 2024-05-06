@@ -4,13 +4,19 @@ interface FontIconProps {
   icon: () => void;
   width?: string | number;
   height?: string | number;
+  className?: string;
 }
 
-const FontIcon = ({ icon, width, height }: FontIconProps) => {
+const FontIcon = ({ icon, width, height, className = "" }: FontIconProps) => {
   const invert = !false;
 
   return (
-    <IconContainer $width={width} $height={height} $invert={invert}>
+    <IconContainer
+      className={className}
+      $width={width}
+      $height={height}
+      $invert={invert}
+    >
       {icon()}
     </IconContainer>
   );

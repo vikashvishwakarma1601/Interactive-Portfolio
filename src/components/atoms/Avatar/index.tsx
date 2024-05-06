@@ -3,11 +3,13 @@ import { AvatarContainer, AvatarImage } from "./style";
 
 interface Props {
   src?: ReactSVGElement | string;
+  hideBG?: boolean;
+  borderRadius?: number | string;
 }
 
-const Avatar = ({ src }: Props) => {
+const Avatar = ({ src, hideBG = false, borderRadius = 50 }: Props) => {
   return (
-    <AvatarContainer>
+    <AvatarContainer $hideBG={hideBG} $borderRadius={borderRadius}>
       <div>
         <AvatarImage src={src} />
       </div>
